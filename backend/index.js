@@ -14,7 +14,7 @@ app.get('/', (req, res)=>{
     res.send("App is running...")
 })
 
-app.use('/user', user_router)
+app.use('/users', user_router)
 
 mongoose.connect(process.env.MONGO_URI)
 .then(() => {
